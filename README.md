@@ -13,6 +13,15 @@
 
 - **Prevent content shifting**: Use a placeholder with a fixed aspect ratio to prevent content shifting when images are still loading.
 
+- **Minification**: Minify the CSS and JavaScript files to reduce file sizes and improve load times.
+
+- **Cross-browser compatibility**: Test the carousel across different browsers and devices to ensure a consistent experience
+
+- **CMS & CDN**: Implement a CMS and CDN to allow for easy content management and faster load times.
+
+- **Testing**: Write unit tests to ensure that the carousel works as expected.
+
+- **Modularization**: Break the carousel into smaller, reusable components to make it easier to maintain and extend.
 
 # Instructions
 

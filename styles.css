@@ -1,0 +1,163 @@
+html,
+body {
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+* {
+  font-family: inherit;
+}
+
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 50vw; 
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 130px); 
+  padding-top: 0;
+  overflow: hidden;
+  margin-bottom: 20px; 
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 1s ease;
+}
+.slide-content {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  width: 70%;
+}
+
+.slide-content h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: #8B6C42; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #A8865B; 
+}
+
+#toggle-autoscroll {
+  margin: 20px auto 20px auto;
+  background-color: #8B6C42;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+#toggle-autoscroll:hover {
+  background-color: #A8865B;
+}
+
+#previous {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cta-box {
+  flex: 0 0 calc(33.333% - 20px); 
+  background-color: #8B6C42;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .cta-box {
+    flex: 0 0 calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-box {
+    flex: 0 0 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    height: calc(100% - 200px);
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-content {
+    bottom: 5%;
+    width: 80%;
+  }
+
+  .slide-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .slide-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+}

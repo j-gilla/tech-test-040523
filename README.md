@@ -3,6 +3,8 @@
 
 # TODO For Production Quality Carousel:
 
+- **CMS & CDN for Images**: Implement a CMS and CDN to allow for easy content management and faster load times.
+
 - **Add ARIA attributes and roles**: Improve the carousel's accessibility by adding ARIA attributes and roles to make it more usable for people using assistive technologies like screen readers.
 
 - **Optimize images**: Ensure that images used in the carousel are optimized for the web to reduce load times and improve performance. Use responsive images by providing multiple sizes using the srcset attribute and proper image formats like WebP.
@@ -16,8 +18,6 @@
 - **Minification**: Minify the CSS and JavaScript files to reduce file sizes and improve load times.
 
 - **Cross-browser compatibility**: Test the carousel across different browsers and devices to ensure a consistent experience
-
-- **CMS & CDN**: Implement a CMS and CDN to allow for easy content management and faster load times.
 
 - **Testing**: Write unit tests to ensure that the carousel works as expected.
 
